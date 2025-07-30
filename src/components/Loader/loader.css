@@ -1,0 +1,112 @@
+  
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  z-index: 200;
+  isolation: isolate;
+  overflow: hidden;
+  transition: var(--main-transition);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: var(--bg-dark-color);
+}
+.loading.hide{
+  height: 0;
+}
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.loader > div > :last-child h3{ /*logo*/
+  font-size: 50px;
+}
+.loader {
+  margin: 50px;
+}
+  
+  /**
+    * push-pop
+    * lil push pop effect, push one side out and one side in
+    * @author jh3y
+  */
+  :root{
+      --duration: .85;
+  }
+  /* new for al-mahdy */
+  .loader{
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .loader::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2px;
+    height: 60px;
+    background-color: var(--logo-color);
+    transition: var(--animation-transition);
+    transition-duration: 0.2s;
+  }
+
+  .loading .loader > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    transition: var(--animation-transition);
+    transition-duration: 0.2s;
+}
+.loading .loader > div:last-child{
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
+  .loading.loaded .loader > div:first-child{
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  .loading.loaded .loader > div:last-child{
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+  .loading.loaded .loader::before{
+    opacity: 0;
+  }
+  .loader div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader div img{
+    object-fit: contain;
+    /* animation: hemlet 2s linear 0s infinite alternate; */
+  }
+  .loader > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(2);
+    z-index: -1;
+  }
+  @keyframes hemlet {
+    0%{
+      transform: translateY(-0px) scale(1);
+    }
+    100%{
+      transform: translateY(-10px) scale(1);
+    }
+  }

@@ -1,0 +1,94 @@
+.where{
+    /* background-color: #ffeeff; */
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.where.ar{
+}
+.where .locations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+.where .location{
+    z-index: 2;
+    transition: var(--animation-transition);
+    transition-duration: 0.8s;
+    /* transform: translateX(50%); */
+    width: calc((100% - 20px) / 3);
+}
+.where.scrolled .location{
+    /* transform: translateX(0%); */
+}
+.where .socialMedia{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    box-shadow: var(--main-shadow);
+    margin-top: 20px;
+}
+.where .location h2{
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--logo-color);
+    width: fit-content;
+    /* font-size: 66px; */
+    /* border-radius: 10px 0px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding: 5px 30px; */
+    transition: var(--animation-transition);
+    font-size: 26px;
+}
+.where .location iframe{
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--logo-color);
+    box-shadow: var(--main-shadow);
+}
+.where .location address{
+    background-color: var(--sec-color);
+    color: var(--logo-color);
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.where.ar .location address{
+    direction: rtl;
+}
+.where .location address svg{
+    font-size: 44px;
+    color: var(--logo-color);
+    /* margin-right: 5px; */
+}
+.where.ar .location address svg{
+    /* margin-right: 0px; */
+    /* margin-left: 5px; */
+}
+@media (max-width: 992px) {
+    .where .locations{
+        gap: 50px;
+    }
+    .where .location{
+        width: calc((100% - 10px) / 2);
+        width: 70%;
+    }
+}
+@media (max-width: 767px) {
+    .where .location{
+        width: 100%;
+        text-align: center;
+    }
+}
