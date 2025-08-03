@@ -25,7 +25,7 @@ const VerticalNav = ({
         <LangSwitch lo={lo}></LangSwitch> */}
         {/* <h3>{t("VerticalNav.Sections")}</h3> */}
         <div className={styles.logo}>
-            <Logo logoNo={1}></Logo>
+            <Logo></Logo>
         </div>
         <ul className={styles.links}>
             {/* <li onClick={() => {closeVerticalNav()}}>
