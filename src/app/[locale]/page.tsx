@@ -1,6 +1,7 @@
 import Logo from "@/components/Logo/logo";
 import styles from "./page.module.css";
 import Loader from "@/components/Loader/Loader";
+import { Link } from "@/i18n/routing";
 
 export default async function Home({
   params
@@ -18,16 +19,16 @@ export default async function Home({
         <Logo lo={locale}></Logo>
       </div>
       <div className={styles.parts}>
-        <a href="/" className={styles.part}>
+        <Link href="/" className={styles.part}>
           <span>
             Cocolate Machinces
           </span>
-        </a>
-        <a href="/" className={styles.part}>
+        </Link>
+        <Link href="/" className={styles.part}>
           <span>
             Other Services
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );

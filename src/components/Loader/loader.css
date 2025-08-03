@@ -69,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
+    width: 150px;
     transition: var(--animation-transition);
     transition-duration: 0.2s;
 }
@@ -79,7 +79,7 @@
   padding: 20px;
 }
   .loading.loaded .loader > div:first-child{
-    transform: translateY(70px);
+    /* transform: translateY(70px); */
     opacity: 0;
   }
   .loading.loaded .loader > div:last-child{

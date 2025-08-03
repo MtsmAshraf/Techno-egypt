@@ -15,7 +15,7 @@ const Loader = ({
         }, 300);
         setTimeout(() => {
             setHide(true)
-        }, 800);
+        }, 700);
     },[])
     const classNames = [
         "loading",
@@ -26,10 +26,7 @@ const Loader = ({
         <div className={classNames.join(" ")}>
             <div className="loader">
                 <div>
-                    <Logo logoNo={1} lo={lo}></Logo>
-                </div>
-                <div>
-                    <Logo logoNo={2} lo={lo}></Logo>
+                    <Logo lo={lo}></Logo>
                 </div>
                 {/* <Image src={loaderImg} alt='Loader'></Image> */}
             </div>
