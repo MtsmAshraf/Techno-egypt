@@ -1,8 +1,8 @@
 .footer{
     background-color: var(--sec-color);
     padding-top: 20px;
-    position: relative;
     isolation: isolate;
+    position: relative;
     overflow: hidden;
     border-top: 1px solid #ccc;
     text-wrap: wrap;

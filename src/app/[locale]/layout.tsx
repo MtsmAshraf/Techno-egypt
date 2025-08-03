@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header/Header";
+// import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
@@ -38,7 +38,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body >
         <NextIntlClientProvider messages={messages}>
-          <Header lo={locale}></Header>
+          {/* <Header lo={locale}></Header> */}
           {children}
           {/* <FloatContact></FloatContact> */}
           <Footer lo={locale}></Footer>

@@ -15,7 +15,7 @@ const Loader = ({
         }, 300);
         setTimeout(() => {
             setHide(true)
-        }, 700);
+        }, 800);
     },[])
     const classNames = [
         "loading",

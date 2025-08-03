@@ -13,12 +13,16 @@
   isolation: isolate;
   overflow: hidden;
   transition: var(--main-transition);
-  transition-duration: 1s;
+  transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
     background-color: var(--bg-dark-color);
 }
 .loading.hide{
-  height: 0;
+  /* height: 0; */
+  display: none;
+}
+.loading.loaded{
+  opacity: 0;
 }
 *:after,
 *:before {
