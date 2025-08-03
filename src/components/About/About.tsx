@@ -81,7 +81,7 @@ const About = ({
                 </MainBtn> */}
             </div>
             <div className={styles.logo}>
-                <Logo lo={lo} logoNo={1}></Logo>
+                <Logo lo={lo}></Logo>
             </div>
         </div>
     </section>

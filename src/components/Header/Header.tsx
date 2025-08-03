@@ -25,7 +25,7 @@ const Header = ({
     <header className={lo === "ar" ? styles.header + " " + styles.ar : styles.header}>
         <div className="container">
             <Link className={styles.logo} href={"/"}>
-              <Logo logoNo={1} lo={lo}></Logo>
+              <Logo lo={lo}></Logo>
             </Link>
             <Nav lo={lo}></Nav>
             <div className={styles.smCtrl}>
@@ -39,7 +39,7 @@ const Header = ({
             </button>
             <VerticalNav shown={showVNav}></VerticalNav>
             <Link className={styles.logo} href={"/"}>
-              <Logo logoNo={2} lo={lo}></Logo>
+              <Logo lo={lo}></Logo>
             </Link>
             {/* <SocialUl></SocialUl> */}
             {/* <LangSwitch lo={lo}></LangSwitch> */}

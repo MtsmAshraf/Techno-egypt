@@ -15,9 +15,7 @@ const Footer = ({
             <Image loading='lazy' src={bgLogo} alt='logo bg'></Image>
         </div>
         <div className={styles.footerContainer}>
-            {/* <Link href={"/"} className={styles.logo}>
-                <Logo logoNo={1} lo={lo}></Logo>
-            </Link> */}
+
             <p>
                 &copy; {t("P")}
                 <br />

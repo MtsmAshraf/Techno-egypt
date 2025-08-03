@@ -66,7 +66,7 @@ const Hero = ({
                 </SwiperSlide> */}
                 <SwiperSlide className={styles.part + " " + styles.one} id='one'>
                         <div className={styles.logo}>
-                            <Logo lo={lo} logoNo={1}></Logo>
+                            <Logo lo={lo}></Logo>
                         </div>
                         <h1>
                             ICSF
@@ -77,7 +77,7 @@ const Hero = ({
                 </SwiperSlide>
                 <SwiperSlide className={styles.part + " " + styles.two} id='two'>
                         <div className={styles.logo}>
-                            <Logo lo={lo} logoNo={2}></Logo>
+                            <Logo lo={lo}></Logo>
                         </div>
                         {/* <h1>
                             Fire Link
