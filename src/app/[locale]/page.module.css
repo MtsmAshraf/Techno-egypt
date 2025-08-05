@@ -54,7 +54,7 @@
   z-index: -1;
 }
 .home .part:nth-child(1){
-  border-right: 1px solid var(--main-color);
+  border-right: 1px solid #111;
   background-image: url("../../../public/imgs/WhatsApp\ Image\ 2025-07-30\ at\ 12.51.30.jpeg");
 }
 .home .part:nth-child(2){
@@ -69,7 +69,7 @@
   }
   .home .part:nth-child(1){
     border: none;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid #111;
   }
 }
 .home .part:hover{
