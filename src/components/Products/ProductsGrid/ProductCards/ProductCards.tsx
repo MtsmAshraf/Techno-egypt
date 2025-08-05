@@ -6,11 +6,7 @@ import Image from 'next/image'
 import { FaBox } from 'react-icons/fa6'
 // import MainHeading from '@/components/MainHeading/MainHeading'
 // import { useTranslations } from 'next-intl'
-const ProductCards = ({
-    // category
-} : {
-    // category: string
-}) => {
+const ProductCards = () => {
     // const t = useTranslations("HomePage.Products")
   return (
     <>
