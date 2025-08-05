@@ -13,6 +13,7 @@ const ProductsGrid = ({
     lo: string
 }) => {
     const [selectedCategory, setSelectedCategory] = useState("")
+    console.log(selectedCategory)
   return (
     <section className={lo === "ar" ? styles.productsGrid + " " + styles.ar : styles.productsGrid}>
         <div className={styles.filter}>
@@ -65,7 +66,7 @@ const ProductsGrid = ({
                 <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-3' name='grid-filter' value={"wrapping"}/>
             </div>
         </div>
-        <ProductCards category={selectedCategory}></ProductCards>
+        <ProductCards ></ProductCards>
     </section>
   )
 }

@@ -26,7 +26,10 @@ const ProductCards = () => {
                                                     Order
                                                 </span>
                                             </a> */}
-                                                <Image loading='lazy' src={product.src} alt='Product Image'></Image>
+                                            {
+                                                product.src && <Image loading='lazy' src={product.src} alt='Product Image'></Image>
+                                            }
+                                                
                                         </div>
                                         <p>
                                             {/* {t(`ProductsCards.${product.id}`)} */}
