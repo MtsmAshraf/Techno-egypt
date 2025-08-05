@@ -4,7 +4,6 @@ import styles from "./products-grid.module.css"
 import ProductCards from './ProductCards/ProductCards'
 import { BsBoxes } from 'react-icons/bs'
 import { MdOutlineScience } from 'react-icons/md'
-import { FcProcess } from 'react-icons/fc'
 import { GiChocolateBar } from 'react-icons/gi'
 import { FaGears } from 'react-icons/fa6'
 

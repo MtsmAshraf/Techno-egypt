@@ -3,8 +3,6 @@ import styles from "./products-cards.module.css"
 import ProductCard from './ProductCard/ProductCard'
 import allProducts, { Product } from "../allProducts"
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FaBox } from 'react-icons/fa6'
 // import MainHeading from '@/components/MainHeading/MainHeading'
 // import { useTranslations } from 'next-intl'

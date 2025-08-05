@@ -3,12 +3,12 @@ import Products from '@/components/Products/Products'
 import React from 'react'
 
 const CocolateMachines = async ({
-  children,
+  // children,
   params
   }
   : 
   Readonly<{
-    children: React.ReactNode;
+    // children: React.ReactNode;
     params: Promise<{locale: string}>
   }>) => {
   const { locale } = await params;
