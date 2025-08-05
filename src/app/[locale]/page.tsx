@@ -2,6 +2,8 @@ import Logo from "@/components/Logo/logo";
 import styles from "./page.module.css";
 import Loader from "@/components/Loader/Loader";
 import { Link } from "@/i18n/routing";
+import { GiChocolateBar } from "react-icons/gi";
+import { FcIdea } from "react-icons/fc";
 
 export default async function Home({
   params
@@ -19,14 +21,16 @@ export default async function Home({
         <Logo lo={locale}></Logo>
       </div>
       <div className={styles.parts}>
-        <Link href="/" className={styles.part}>
+        <Link href="/chocolate-machines" className={styles.part}>
+          <GiChocolateBar />
           <span>
             Cocolate Machinces
           </span>
         </Link>
-        <Link href="/" className={styles.part}>
+        <Link href="/engineering-solutions" className={styles.part}>
+        <FcIdea />
           <span>
-            Other Services
+            Engineering Solutions
           </span>
         </Link>
       </div>
