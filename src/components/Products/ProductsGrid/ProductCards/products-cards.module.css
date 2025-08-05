@@ -26,48 +26,31 @@
     border-bottom: 1px solid var(--sec-color);
     padding-bottom: 30px;
     margin-bottom: 30px;
+    padding: 40px;
 }
-.productCards > div{
-    /* width: 250px; */
+.productCards > a{ /* product card */
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
     transition: var(--main-transition);
-    /* border-radius: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #aaaaaa;
 }
-.productCards > div .cardImg{
+.productCards > a .cardImg{
     transition: var(--main-transition);
-    /* width: 250px; */
     aspect-ratio: 1/1;
-    /* border-radius: 6px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15); */
-    border: 1px solid #aaaaaa;
     padding: 30px;
     background-color: #fff;
-    height: 220px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
-}
-.productCards > div .cardImg::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #000;
     width: 100%;
-    opacity: 0;
-    height: 100%;
-    transition: var(--main-transition);
-    z-index: 2;
 }
-.productCards > div:hover .cardImg::before{
-    opacity: 0.7;
-}
-.productCards > div .cardImg a{
+.productCards > a .cardImg a{
     position: absolute;
     left: 50%;
     top: 130%;
@@ -84,17 +67,17 @@
     justify-content: center;
     /* gap: 5px; */
 }
-.productCards > div:hover .cardImg a{
+.productCards > a:hover .cardImg a{
     top: 50%;
 }
-.productCards > div .cardImg a svg{
+.productCards > a .cardImg a svg{
     background-color: var(--main-color);
     padding: 10px;
     height: 20px;
     font-size: 12px;
     z-index: 2;
 }
-.productCards > div .cardImg a span{
+.productCards > a .cardImg a span{
     background-color: var(--logo-color);
     color: #000;
     padding: 5px 20px;
@@ -109,40 +92,40 @@
     .subHeading{
         flex-direction: column;
     }
-    .productCards > div .cardImg::before,
-    .productCards > div:hover .cardImg::before{
+    .productCards > a .cardImg::before,
+    .productCards > a:hover .cardImg::before{
         opacity: 0;
         z-index: -1;
     }
-    .productCards > div .cardImg a,
-    .productCards > div:hover .cardImg a{
+    .productCards > a .cardImg a,
+    .productCards > a:hover .cardImg a{
         top: 80%;
         transform: translate(-50%, -50%) scale(0.7);
 
     }
-    .productCards > div .cardImg a svg{
+    .productCards > a .cardImg a svg{
         height: 16px;
         font-size: 12px;
     }
-    .productCards > div .cardImg a span{
+    .productCards > a .cardImg a span{
         height: 25px;
         padding: 2px 10px;
         font-size: 14px;
     }
 }
-.productCards > div .cardImg img{
+.productCards > a .cardImg img{
     transition: var(--main-transition);
     height: 100%;
     object-fit: contain;
 }
-.productCards > div:hover .cardImg img{
+.productCards > a:hover .cardImg img{
     transform: scale(1.1);
 }
-.productCards > div p,
+.productCards > a p,
 .productCards .nameLink{
     width: 100%;
     text-align: center;
-    background-color: var(--sec-color);
+    background-image: var(--main-gradient);
     color: #fff;
     padding: 10px;
     /* box-shadow: var(--main-shadow), var(--sec-shadow); */
@@ -155,10 +138,33 @@
     /* border-radius: 0px 0px 6px 6px; */
     /* box-shadow: var(--sec-shadow); */
 }
-.productCards > div:hover p,
-.productCards > div:hover .nameLink{
+.productCards > a:hover p,
+.productCards > a:hover .nameLink{
     box-shadow: var(--main-shadow), var(--sec-shadow);
     background-color: var(--main-color);
+}
+.productCards > a .productDetails{
+    background-color: #fff;
+}
+.productCards > a .productDetails ul{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.productCards > a .productDetails ul li{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.productCards > a .productDetails ul li svg{
+    font-size: 22px;
+    color: var(--main-color);
+}
+.productCards > a .productDetails ul li span{
 }
 @media (max-width: 1200px) {
     .productCards{
@@ -174,7 +180,7 @@
     .productCards{
         grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
-    .productCards > div .cardImg{
+    .productCards > a .cardImg{
         height: 170px;
     }
 }
@@ -186,7 +192,7 @@
     .productCards{
         grid-template-columns: repeat(2, minmax(100px, 1fr));
     }
-    .productCards > div{
+    .productCards > a{
         margin-right: auto;
         margin-left: auto;
         /* display: flex; */
@@ -194,16 +200,16 @@
         gap: 6px;
         width: 100%;
     }
-    .productCards > div.odd{
+    .productCards > a.odd{
         /* background-color: #ffeeff; */
     }
-    .productCards > div .cardImg{
+    .productCards > a .cardImg{
         background-color: var(--bg-color);
     }
-    .productCards > div .cardImg img{
+    .productCards > a .cardImg img{
         object-fit: contain;
     }
-    .productCards > div p,
+    .productCards > a p,
     .productCards .nameLink{
         text-align: center;
         font-size: 14px;

@@ -2,6 +2,9 @@ import Header from '@/components/Header/Header'
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import React from 'react'
+import styles from "./subpages-layout.module.css"
+
+
 
 export default async function SubPagesLayout({
   children,
@@ -16,11 +19,11 @@ export default async function SubPagesLayout({
     notFound();
   }
   return (
-    <>
+    <div className={styles.subpagesLayout}>
         <Header lo={locale}></Header>
         <main>
             {children}
         </main>
-    </>
+    </div>
   )
 }

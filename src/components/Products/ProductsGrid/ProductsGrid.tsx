@@ -2,6 +2,11 @@
 import React, { useState } from 'react'
 import styles from "./products-grid.module.css"
 import ProductCards from './ProductCards/ProductCards'
+import { BsBoxes } from 'react-icons/bs'
+import { MdOutlineScience } from 'react-icons/md'
+import { FcProcess } from 'react-icons/fc'
+import { GiChocolateBar } from 'react-icons/gi'
+import { FaGears } from 'react-icons/fa6'
 
 const ProductsGrid = ({
     lo
@@ -14,9 +19,9 @@ const ProductsGrid = ({
         <div className={styles.filter}>
             <div>
                 <label htmlFor="all">
-                    {/* <div className={styles.icon}>
-                        <FaBoxesStacked />
-                    </div> */}
+                    <div className={styles.icon}>
+                        <BsBoxes />
+                    </div>
                     <span>
                         {/* {t('Filter.All')} */}
                         All
@@ -26,27 +31,39 @@ const ProductsGrid = ({
             </div>
             <div>
                 <label htmlFor="cat-1">
-                    {/* <div className={styles.icon}>
-                        <FaFireExtinguisher />
-                    </div> */}
+                    <div className={styles.icon}>
+                        <MdOutlineScience />
+                    </div>
                     <span>
                         {/* {t('Filter.Body')} */}
-                        Conventional
+                        Lab
                     </span>
                 </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-1' name='grid-filter' value={"conventional"}/>
+                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-1' name='grid-filter' value={"lab"}/>
             </div>
             <div>
                 <label htmlFor="cat-2">
-                    {/* <div className={styles.icon}>
-                        <AiFillAlert />
-                    </div> */}
+                    <div className={styles.icon}>
+                        <FaGears />
+                    </div>
                     <span>
                         {/* {t('Filter.Head')} */}
-                        Addressable
+                        Process
                     </span>
                 </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-2' name='grid-filter' value={"addressable"}/>
+                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-2' name='grid-filter' value={"process"}/>
+            </div>
+            <div>
+                <label htmlFor="cat-3">
+                    <div className={styles.icon}>
+                        <GiChocolateBar />
+                    </div>
+                    <span>
+                        {/* {t('Filter.Head')} */}
+                        Wrapping
+                    </span>
+                </label>
+                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-3' name='grid-filter' value={"wrapping"}/>
             </div>
         </div>
         <ProductCards category={selectedCategory}></ProductCards>

@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import React from 'react'
 
 const ProductCard = ({
@@ -5,7 +6,11 @@ const ProductCard = ({
 } : {
   children: React.ReactNode
 }) => {
-  return children;
+  return(
+    <Link href={"/chocolate-machines"}>
+      {children}
+    </Link>
+  )
 }
 
 export default ProductCard

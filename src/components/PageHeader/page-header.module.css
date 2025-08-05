@@ -1,0 +1,12 @@
+.pageHeader{
+    background-image: var(--main-gradient);
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}

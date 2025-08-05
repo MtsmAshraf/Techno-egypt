@@ -1,16 +1,12 @@
 .productsGrid .filter{
     display: flex;
     align-items: center;
-    /* border-bottom: 1px solid var(--logo-color); */
-    width: fit-content;
-    /* height: 28px; */
-    /* border-radius: 6px; */
-    margin-bottom: 40px;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    /* background-color: var(--main-color); */
-    /* box-shadow: var(--main-shadow); */
+    padding-top: 10px;
     color: #fff;
+    background-color: var(--sec-color);
 }
 .productsGrid.ar .filter{
 }
@@ -45,43 +41,37 @@
 }
 .productsGrid .filter label svg,
 .productsGrid .filter label img{
-    color: var(--sec-color);
+    color: #fff !important;
+    stroke: #fff !important;
+    fill: #fff !important;
     transition: var(--main-transition);
     transition-duration: 0.1s;
     font-size: 20px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 .productsGrid .filter label span{
     padding: 5px 10px;
-    background-color: var(--sec-color);
+    /* background-color: var(--sec-color); */
     width: 100%;
     text-align: center;
-    border-bottom: 4px solid var(--logo-color);
+    /* border-bottom: 4px solid var(--logo-color); */
     transition: var(--main-transition);
     transition-duration: 0.1s;
 
 }
-/* .productsGrid.ar .filter div:nth-child(1) label{
-    font-size: 18px;
-}
-.productsGrid.ar .filter div:nth-child(2) label{
-    font-size: 18px;
-}
-.productsGrid.ar .filter div:nth-child(3) label{
-    font-size: 18px;
-} */
 .productsGrid .filter label:hover span,
 .productsGrid .filter div:has(input:checked) label span{
-    background-color: var(--main-color);
-    border-bottom: 4px solid var(--sec-color);
+    background-color: var(--bg-color);
+    color: #000;
+    /* border-bottom: 4px solid var(--sec-color); */
 }
 .productsGrid .filter label:hover svg,
 .productsGrid .filter div:has(input:checked) label svg,
 .productsGrid .filter label:hover img,
 .productsGrid .filter div:has(input:checked) label img{
-    height: 55px;   
-    width: 55px; 
+    height: 60px;   
+    width: 60px; 
     color: var(--main-color);
 }
 @media (max-width: 767px) {

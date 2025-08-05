@@ -1,5 +1,5 @@
 .footer{
-    background-color: var(--sec-color);
+    background-color: var(--bg-dark-color);
     padding-top: 20px;
     isolation: isolate;
     position: relative;
@@ -18,8 +18,8 @@
     top: 50%;
     transform: scale(1) translate(-50%,-50%);
     z-index: -1;
-    /* height: 100%; */
     opacity: 0.1;
+    display: none;
 }
 .footer .footerContainer{
     text-align: center;
