@@ -7,9 +7,9 @@ import { FaBox } from 'react-icons/fa6'
 // import MainHeading from '@/components/MainHeading/MainHeading'
 // import { useTranslations } from 'next-intl'
 const ProductCards = ({
-    category
+    // category
 } : {
-    category: string
+    // category: string
 }) => {
     // const t = useTranslations("HomePage.Products")
   return (
