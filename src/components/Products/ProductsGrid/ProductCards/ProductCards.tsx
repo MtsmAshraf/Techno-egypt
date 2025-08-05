@@ -4,8 +4,8 @@ import ProductCard from './ProductCard/ProductCard'
 import allProducts, { Product } from "../allProducts"
 import Image from 'next/image'
 import { FaBox } from 'react-icons/fa6'
-// import MainHeading from '@/components/MainHeading/MainHeading'
-// import { useTranslations } from 'next-intl'
+import testImg from "../../../../../public/imgs/product-test.png"
+
 const ProductCards = () => {
     // const t = useTranslations("HomePage.Products")
   return (
@@ -14,7 +14,6 @@ const ProductCards = () => {
             {
                 allProducts.map((product: Product) => {
                     return(
-                        product.category === "conventional" && product.brand === "ATS" &&
                         <ProductCard key={product.id}>
                             <div className={styles.productCard}>
                                 {
@@ -26,9 +25,7 @@ const ProductCards = () => {
                                                     Order
                                                 </span>
                                             </a> */}
-                                            {
-                                                product.src && <Image loading='lazy' src={product.src} alt='Product Image'></Image>
-                                            }
+                                                <Image loading='lazy' src={product.src || testImg} alt='Product Image'></Image>
                                                 
                                         </div>
                                         <p>
