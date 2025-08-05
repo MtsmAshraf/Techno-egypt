@@ -20,7 +20,7 @@ const ProductCards = () => {
                                     <>
                                         <div className={styles.cardImg}>
                                             {/* <a href="#contact">
-                                                <FontAwesomeIcon icon={faPhone} />
+                                                <FaPhone />
                                                 <span>
                                                     Order
                                                 </span>

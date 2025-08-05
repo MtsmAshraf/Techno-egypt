@@ -30,6 +30,11 @@ const Loader = ({
                 </div>
                 {/* <Image src={loaderImg} alt='Loader'></Image> */}
             </div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     )
 }
