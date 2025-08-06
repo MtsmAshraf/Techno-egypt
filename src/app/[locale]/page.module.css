@@ -46,7 +46,6 @@
   padding-left: 100px;
   padding-right: 100px;
   text-align: center;
-  background-color: red;
   transition: var(--main-transition);
 }
 .home .part::before{
@@ -62,10 +61,10 @@
 }
 .home .part:nth-child(1){
   border-right: 1px solid #111;
-  background-image: url("../../../public/imgs/chocolate-bg.jpg");
+  background-image: url("../../../public/imgs/chocolate-bg.webp");
 }
 .home .part:nth-child(2){
-  background-image: url("../../../public/imgs/engineering-solutions-bg.jpg");
+  background-image: url("../../../public/imgs/engineering-solutions-bg.webp");
 }
 @media (max-width: 767px) {
   .home .parts{
