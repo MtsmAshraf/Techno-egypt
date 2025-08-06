@@ -3,11 +3,7 @@ import React, { useEffect, useState } from 'react'
 import "./loader.css"
 import fullLogo from "../../../public/imgs/logo-1.png"
 import Image from 'next/image'
-const Loader = ({
-    lo
-} : {
-    lo: string
-}) => {
+const Loader = () => {
     const [loaded, setLoaded] = useState(false)
     const [hide, setHide] = useState(false)
     useEffect(() => {
