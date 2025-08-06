@@ -9,6 +9,7 @@ import { Link } from '@/i18n/routing'
 // import LangSwitch from '../Nav/LangSwitch/LangSwitch'
 // import { usePathname } from 'next/navigation'
 import Logo from '../Logo/logo'
+import LangSwitch from '../Nav/LangSwitch/LangSwitch'
 
 const Header = ({
     lo
@@ -33,11 +34,8 @@ const Header = ({
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>
             <VerticalNav shown={showVNav}></VerticalNav>
-            <Link className={styles.logo} href={"/"}>
-              <Logo lo={lo}></Logo>
-            </Link>
             {/* <SocialUl></SocialUl> */}
-            {/* <LangSwitch lo={lo}></LangSwitch> */}
+            <LangSwitch lo={lo}></LangSwitch>
 
         </div>
     </header>

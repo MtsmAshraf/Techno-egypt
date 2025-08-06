@@ -1,18 +1,22 @@
 
 .logo{
-    width: 100%;
-    /* height: 70px; */
-    /* height: fit-content; */
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: 5px;
 }
-.logo.ar{
-    font-family: "Tajawal", sans-serif;
-    direction: rtl;
-}
-.logo img{
-    height: fit-content;
+.logo img:first-child{
+    height: 100%;
+    width: fit-content;
     object-fit: contain;
+}
+.logo img:last-child{
+    width: 100px;
+    object-fit: contain;
+}
+@media (max-width: 767px) {
+    .logo img:last-child{
+        display: none;
+    }
 }

@@ -55,10 +55,10 @@
 }
 .home .part:nth-child(1){
   border-right: 1px solid #111;
-  background-image: url("../../../public/imgs/WhatsApp\ Image\ 2025-07-30\ at\ 12.51.30.jpeg");
+  background-image: url("../../../public/imgs/chocolate-bg.jpg");
 }
 .home .part:nth-child(2){
-  background-image: url("../../../public/imgs/WhatsApp\ Image\ 2025-07-30\ at\ 12.51.30\ \(1\).jpeg");
+  background-image: url("../../../public/imgs/engineering-solutions-bg.jpg");
 }
 @media (max-width: 767px) {
   .home .parts{

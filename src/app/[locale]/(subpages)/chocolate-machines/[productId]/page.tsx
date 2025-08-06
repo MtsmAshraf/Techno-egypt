@@ -3,12 +3,12 @@ import products, { Product } from '@/components/Products/ProductsGrid/allProduct
 import { notFound } from 'next/navigation'
 import React from 'react'
 
-const ProductId = ({
+const ProductId = async ({
     params
 }: {
-    params: { productId: string }
+    params: Promise<{productId: string}>
 }) => {
-    const {productId} = params
+    const {productId} = await params
     const product = products.find((ele: Product) => ele.id === productId)
     if(!product){
         return notFound()

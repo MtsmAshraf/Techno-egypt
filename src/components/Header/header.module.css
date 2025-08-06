@@ -21,7 +21,7 @@
 }
 .header .logo{
     text-decoration: none;
-    width: 50px;
+    width: fit-content;
 }
 .header .bars{
     color: var(--text-color);
