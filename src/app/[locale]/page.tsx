@@ -6,18 +6,19 @@ import { FcIdea } from "react-icons/fc";
 import Image from "next/image";
 import fullLogo from "../../../public/imgs/logo-1.png"
 
-export default async function Home({
-  params
-}: {
-  params: Promise<{locale: string}>
+// export default async function Home({
+//   params
+// }: {
+//   params: Promise<{locale: string}>
 
-}) {
+// }) {
+  export default async function Home() {
   
-  const { locale } = await params;
+  // const { locale } = await params;
   
   return (
     <div className={styles.home}>
-      <Loader lo={locale}></Loader>
+      <Loader></Loader>
       <div className={styles.logo}>
         <Image src={fullLogo} alt='Techno Egypt Logo'></Image>
       </div>
