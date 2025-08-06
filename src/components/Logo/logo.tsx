@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./logo.module.css"
 import Image from "next/image"
-import logoImg from "../../../public/imgs/logo-img.png"
-import logoText from "../../../public/imgs/logo-text.png"
+import logoImg from "../../../public/imgs/logo-img.webp"
+import logoText from "../../../public/imgs/logo-text.webp"
 
-import fullLogo from "../../../public/imgs/logo-1.png"
+import fullLogo from "../../../public/imgs/logo-1.webp"
 
 const Logo = ({
     lo,

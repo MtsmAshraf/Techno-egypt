@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import "./loader.css"
-import fullLogo from "../../../public/imgs/logo-1.png"
+import fullLogo from "../../../public/imgs/logo-1.webp"
 import Image from 'next/image'
 const Loader = () => {
     const [loaded, setLoaded] = useState(false)

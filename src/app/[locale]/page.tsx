@@ -3,7 +3,7 @@ import Loader from "@/components/Loader/Loader";
 import { Link } from "@/i18n/routing";
 import { GiChocolateBar } from "react-icons/gi";
 import Image from "next/image";
-import fullLogo from "../../../public/imgs/logo-1.png"
+import fullLogo from "../../../public/imgs/logo-1.webp"
 import { FaLightbulb } from "react-icons/fa";
 
 // export default async function Home({
