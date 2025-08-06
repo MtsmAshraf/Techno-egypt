@@ -1,19 +1,19 @@
 .nav{
     display: flex;
     align-items: center;
-    box-shadow: var(--sec-shadow);
+    /* box-shadow: var(--sec-shadow); */
 }
 .nav .links{
     display: flex;
     align-items: center;
-    /* gap: 5px; */
+    gap: 10px;
     /* border-right: 1px solid var(--text-color);
     padding-right: 10px; */
     background-color: var(--logo-color);
     background-color: #fff;
     font-size: 14px;
-    border: 1px solid var(--main-color);
-    box-shadow: var(--main-shadow);
+    /* border: 1px solid var(--main-color); */
+    /* box-shadow: var(--main-shadow); */
     padding: 2px 0px;
 }
 .nav .links a{
@@ -24,16 +24,36 @@
     transition: var(--main-transition);
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
-.nav .links a.active,
-.nav .links a:hover{
+.nav .links a svg{
+    color: var(--sec-color);
+    font-size: 30px;
+    transition: var(--main-transition);
+    transform: scale(0.9);
+}
+.nav .links a span{
+    transition: var(--main-transition);
+    padding: 2px 10px;
+}
+.nav .links a.active span,
+.nav .links a:hover span{
     background-color: var(--main-color);
     color: #fff;
     box-shadow: var(--main-shadow);
-    border-top: 4px solid var(--main-color);
-    border-bottom: 4px solid var(--sec-color);
+    /* border-top: 4px solid var(--main-color);
+    border-bottom: 4px solid var(--sec-color); */
     /* border-radius: 6px; */
     /* font-weight: normal; */
+}
+.nav .links a.active svg,
+.nav .links a:hover svg{
+    color: var(--main-color);
+    transform: scale(1.2) translateY(-2px);
 }
 .nav > :last-child{
     /* margin-left: 20px; */

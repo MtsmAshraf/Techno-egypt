@@ -4,8 +4,8 @@
     top: 0;
     transform: translateX(110%);
     height: 100vh;
-    background-color: var(--bg-color);
     background-color: var(--sec-color);
+    background-color: var(--bg-dark-color);
     padding-top: 20px;
     border-left: 1px solid var(--logo-color);
     transition: var(--main-transition);
@@ -32,7 +32,14 @@
     margin-top: 30px;
 }
 .verticalNav .logo{
-    width: 50px;
+    /* width: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.verticalNav .logo img{
+    object-fit: contain;
+    width: 100%;
 }
 .verticalNav .links{
     display: flex;

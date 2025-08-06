@@ -2,9 +2,9 @@ import styles from "./page.module.css";
 import Loader from "@/components/Loader/Loader";
 import { Link } from "@/i18n/routing";
 import { GiChocolateBar } from "react-icons/gi";
-import { FcIdea } from "react-icons/fc";
 import Image from "next/image";
 import fullLogo from "../../../public/imgs/logo-1.png"
+import { FaLightbulb } from "react-icons/fa";
 
 // export default async function Home({
 //   params
@@ -30,7 +30,7 @@ import fullLogo from "../../../public/imgs/logo-1.png"
           </span>
         </Link>
         <Link href="/engineering-solutions" className={styles.part}>
-        <FcIdea />
+        <FaLightbulb />
           <span>
             Engineering Solutions
           </span>

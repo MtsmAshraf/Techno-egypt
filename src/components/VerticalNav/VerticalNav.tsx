@@ -25,33 +25,21 @@ const VerticalNav = ({
         <LangSwitch lo={lo}></LangSwitch> */}
         {/* <h3>{t("VerticalNav.Sections")}</h3> */}
         <div className={styles.logo}>
-            <Logo></Logo>
+            <Logo text={false}></Logo>
         </div>
         <ul className={styles.links}>
-            {/* <li onClick={() => {closeVerticalNav()}}>
-                <a href={'/'}>{t("VerticalNav.Home")}</a>
-            </li> */}
-            {/* <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#manufacturing'}>{t("VerticalNav.Manufacturing")}</a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#fire-system'}>{t("VerticalNav.FireSystem")}</a>
-            </li> */}
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#about'}>
-                    {/* {t("VerticalNav.Fields")} */}
                     About Us
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#partners'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Partners
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#services'}>
-                    {/* {t("VerticalNav.Fields")} */}
                     Services
                 </a>
             </li>
@@ -62,43 +50,30 @@ const VerticalNav = ({
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#clients'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Clients
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#products'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Products
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#projects'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Projects
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#where'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Our Location
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#contact'}>
-                    {/* {t("VerticalNav.Brands")} */}
                     Contact Us
                 </a>
             </li>
-            {/* <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#products'}>{t("VerticalNav.Products")}</a>
-            </li> */}
-            {/* <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#contact'}>{t("VerticalNav.ContactUs")}</a>
-            </li> */}
         </ul>
-        {/* <h3>{t("VerticalNav.Contact")}</h3>
-        <SocialUl></SocialUl> */}
     </div>
   )
 }
