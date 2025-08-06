@@ -2,12 +2,14 @@ import { Link } from '@/i18n/routing'
 import React from 'react'
 
 const ProductCard = ({
-  children
+  children,
+  productId
 } : {
-  children: React.ReactNode
+  children: React.ReactNode,
+  productId: string
 }) => {
   return(
-    <Link href={"/chocolate-machines"}>
+    <Link href={`/chocolate-machines/${productId}`}>
       {children}
     </Link>
   )

@@ -14,7 +14,7 @@ const ProductCards = () => {
             {
                 allProducts.map((product: Product) => {
                     return(
-                        <ProductCard key={product.id}>
+                        <ProductCard key={product.id} productId={product.id}>
                             <div className={styles.productCard}>
                                 {
                                     <>

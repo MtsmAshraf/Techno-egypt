@@ -43,34 +43,6 @@ const products : Product[] = [
         brand: "Codesec",
         category: "conventional" 
     },
-    // { 
-    //     id: "2", 
-    //     name: "Conventional Control Panels", 
-    //     src: image2, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "3", 
-    //     name: "Conventional Control Panels", 
-    //     src: image3, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "4", 
-    //     name: "Conventional Control Panels", 
-    //     src: image4, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "8", 
-    //     name: "Conventional Control Panels", 
-    //     src: image8, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
     { 
         id: "5", 
         name: "Detectors", 
@@ -78,13 +50,6 @@ const products : Product[] = [
         brand: "Codesec",
         category: "conventional" 
     },
-    // { 
-    //     id: "6", 
-    //     name: "Detectors", 
-    //     src: image6, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
     { 
         id: "9", 
         name: "Fire Sirens", 
@@ -99,13 +64,6 @@ const products : Product[] = [
         brand: "Codesec",
         category: "conventional" 
     },
-    // { 
-    //     id: "10", 
-    //     name: "Manual Call Points", 
-    //     src: image10, 
-    //     brand: "Codesec",
-    //     category: "conventional" 
-    // },
     { 
         id: "11", 
         name: "Conventional control panels", 
@@ -113,27 +71,6 @@ const products : Product[] = [
         brand: "ATS",
         category: "conventional" 
     },
-    // { 
-    //     id: "12", 
-    //     name: "Conventional control panels", 
-    //     src: image12, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "13", 
-    //     name: "Conventional control panels", 
-    //     src: image13, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "14", 
-    //     name: "Conventional control panels", 
-    //     src: image14, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
     { 
         id: "15", 
         name: "Detectors", 
@@ -141,20 +78,6 @@ const products : Product[] = [
         brand: "ATS",
         category: "conventional" 
     },
-    // { 
-    //     id: "16", 
-    //     name: "Fire Sirens", 
-    //     src: image16, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
-    // { 
-    //     id: "17", 
-    //     name: "Fire Sirens", 
-    //     src: image17, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
     { 
         id: "18", 
         name: "Fire Sirens", 
@@ -169,13 +92,6 @@ const products : Product[] = [
         brand: "ATS",
         category: "conventional" 
     },
-    // { 
-    //     id: "21", 
-    //     name: "Manual Call Points", 
-    //     src: image21, 
-    //     brand: "ATS",
-    //     category: "conventional" 
-    // },
     { 
         id: "20", 
         name: "Indication Devices", 

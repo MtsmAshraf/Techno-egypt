@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   
   icons: icon.src,
   
-  themeColor: "#016796", // Fire engine red color
 };
 
 export default async function RootLayout({

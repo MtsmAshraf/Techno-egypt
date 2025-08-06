@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from "./page-header.module.css"
-const PageHeader = () => {
+const PageHeader = ({
+  children
+} : {
+  children: React.ReactNode
+}) => {
   return (
     <div className={styles.pageHeader}>
-        Chocolate Machines
+        {children}
     </div>
   )
 }

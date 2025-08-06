@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./nav.module.css"
+import { Link } from '@/i18n/routing'
+import { usePathname } from 'next/navigation'
 // import { useTranslations } from 'next-intl'
 // import { Link } from '@/i18n/routing'
 
@@ -9,44 +11,24 @@ const Nav = ({
     lo: string
 }) => {
     // const t = useTranslations("Header")
+    const pathname = usePathname()
   return (
     <nav className={lo === "ar" ? styles.nav + " " + styles.ar : styles.nav}>
         <ul className={styles.links}>
             <li>
-                <a href={'#'}>
-                {/* {t("Nav.Home")} */}
-                Home
-                </a>
+                <Link className={pathname === "/" ? styles.active : ''} href={'/'}>
+                    Home
+                </Link>
             </li>
             <li>
-                <a href={'#about'}>
-                    {/* {t("Nav.Manufacturing")} */}
-                    About Us
-                </a>
+                <Link className={pathname.includes('/chocolate-machines') ? styles.active : ""} href={'/chocolate-machines'}>
+                    Chocolate Machines
+                </Link>
             </li>
             <li>
-                <a href={'#services'}>
-                    {/* {t("Nav.Manufacturing")} */}
-                    Services
-                </a>
-            </li>
-            <li>
-                <a href={'#products'}>
-                    {/* {t("Nav.Products")} */}
-                    Products
-                </a>
-            </li>
-            <li>
-                <a href={'#projects'}>
-                    {/* {t("Nav.Products")} */}
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a href={'#contact'}>
-                    {/* {t("Nav.ContactUs")} */}
-                    Contact Us
-                </a>
+                <Link className={pathname.includes('/engineering-solutions') ? styles.active : ""} href={'/engineering-solutions'}>
+                    Engineering Solutions
+                </Link>
             </li>
         </ul>
         {/* <LangSwitch lo={lo}></LangSwitch> */}

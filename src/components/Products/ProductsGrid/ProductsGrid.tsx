@@ -13,7 +13,6 @@ const ProductsGrid = ({
     lo: string
 }) => {
     const [selectedCategory, setSelectedCategory] = useState("")
-    console.log(selectedCategory)
   return (
     <section className={lo === "ar" ? styles.productsGrid + " " + styles.ar : styles.productsGrid}>
         <div className={styles.filter}>

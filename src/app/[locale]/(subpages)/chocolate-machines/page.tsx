@@ -2,7 +2,7 @@ import PageHeader from '@/components/PageHeader/PageHeader';
 import Products from '@/components/Products/Products'
 import React from 'react'
 
-const CocolateMachines = async ({
+const ChocolateMachines = async ({
   // children,
   params
   }
@@ -14,10 +14,12 @@ const CocolateMachines = async ({
   const { locale } = await params;
   return (
     <div>
-      <PageHeader />
+      <PageHeader>
+        Chocolate Machines
+      </PageHeader>
       <Products lo={locale} />
     </div>
   )
 }
 
-export default CocolateMachines
+export default ChocolateMachines

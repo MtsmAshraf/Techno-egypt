@@ -29,8 +29,8 @@
   --sec-mini-shadow: 1px 1px 0px 1px var(--logo-color);
 }
 ::selection{
-  background-color: var(--logo-color);
-  color: var(--main-color);
+  background-color: var(--main-color);
+  color: #fff;
 }
 html{
   scroll-behavior: smooth;
@@ -91,19 +91,3 @@ svg{
   }
 }
 
-.hexagon {
-  /* width: 100px; */
-  /* height: 110px; */
-  /* background: #64C7CC; */
-  clip-path: polygon(
-    50% 0%, 
-    100% 25%, 
-    100% 75%, 
-    50% 100%, 
-    0% 75%, 
-    0% 25%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

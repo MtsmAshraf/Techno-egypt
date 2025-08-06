@@ -16,11 +16,6 @@ const Header = ({
     lo: string
   }) => {
     const [showVNav, setShowVNav] = useState(false)
-    // const pathname = usePathname()
-    // useEffect(() => {
-    //   setShowVNav(false)
-    //   console.log("false")
-    // },[pathname])
   return (
     <header className={lo === "ar" ? styles.header + " " + styles.ar : styles.header}>
         <div className="container">
