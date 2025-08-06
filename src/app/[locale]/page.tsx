@@ -32,7 +32,7 @@ import fullLogo from "../../../public/imgs/logo-1.png"
         <Link href="/engineering-solutions" className={styles.part}>
         <FcIdea />
           <span>
-            Engineering Solution s
+            Engineering Solutions
           </span>
         </Link>
       </div>
