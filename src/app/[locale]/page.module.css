@@ -6,6 +6,7 @@
   backdrop-filter: blur(20px);
   border: 1px solid var(--main-color);
   width: 150px;
+  height: 150px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -13,6 +14,12 @@
   border-radius: 50%;
   padding: 20px;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .logo img{
+  object-fit: contain;
 }
 .home .parts{
   height: 100dvh;

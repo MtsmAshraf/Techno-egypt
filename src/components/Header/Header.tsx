@@ -21,7 +21,7 @@ const Header = ({
     <header className={lo === "ar" ? styles.header + " " + styles.ar : styles.header}>
         <div className="container">
             <Link className={styles.logo} href={"/"}>
-              <Logo lo={lo}></Logo>
+              <Logo text lo={lo}></Logo>
             </Link>
             <Nav lo={lo}></Nav>
             <div className={styles.smCtrl}>

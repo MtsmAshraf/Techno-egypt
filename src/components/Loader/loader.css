@@ -27,7 +27,6 @@
   opacity: 0;
   transform: translateZ(2000px);
 }
-/* new for al-mahdy */
 .loader{
   position: relative;
   height: 300px;
@@ -40,9 +39,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 250px;
   width: 250px;
   transition: var(--animation-transition);
   transition-duration: 0.2s;
+}
+@media (max-width: 767px) {
+  .loading .loader > div{
+    height: 200px;
+    width: 200px;
+  }
 }
 .loading.loaded .loader > div{
   /* transform: translateY(70px); */

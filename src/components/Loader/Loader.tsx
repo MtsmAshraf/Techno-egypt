@@ -1,7 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import "./loader.css"
-import Logo from '../Logo/logo'
+import fullLogo from "../../../public/imgs/logo-1.png"
+import Image from 'next/image'
 const Loader = ({
     lo
 } : {
@@ -26,7 +27,7 @@ const Loader = ({
         <div className={classNames.join(" ")}>
             <div className="loader">
                 <div>
-                    <Logo lo={lo}></Logo>
+                    <Image src={fullLogo} alt='Techno Egypt Logo'></Image>
                 </div>
                 {/* <Image src={loaderImg} alt='Loader'></Image> */}
             </div>
