@@ -26,7 +26,7 @@ import { FaLightbulb } from "react-icons/fa";
         <Link href="/chocolate-machines" className={styles.part}>
           <GiChocolateBar />
           <span>
-            Cocolate Machinces
+            Chocolate Machinces
           </span>
         </Link>
         <Link href="/engineering-solutions" className={styles.part}>

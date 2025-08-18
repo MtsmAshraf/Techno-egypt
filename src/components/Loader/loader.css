@@ -9,12 +9,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--bg-color);
   z-index: 200;
   isolation: isolate;
   overflow: hidden;
   transition: var(--main-transition);
-  transition-duration: 0.6s;
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
   background-color: var(--bg-dark-color);
   perspective-origin: 1000px;

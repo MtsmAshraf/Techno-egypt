@@ -1,8 +1,9 @@
-import PageHeader from '@/components/PageHeader/PageHeader';
-import Products from '@/components/Products/Products'
 import React from 'react'
+import styles from "./machines.module.css"
+import ChocolateMachines from '@/components/ChocolateMachines/ChocolateMachines';
+import PageHeader from '@/components/PageHeader/PageHeader';
 
-const ChocolateMachines = async ({
+const ChocolateMachinesPage = async ({
   // children,
   params
   }
@@ -13,13 +14,13 @@ const ChocolateMachines = async ({
   }>) => {
   const { locale } = await params;
   return (
-    <div>
-      <PageHeader>
-        Chocolate Machines
-      </PageHeader>
-      <Products lo={locale} />
-    </div>
+    <section className={styles.machines}>
+      <PageHeader />
+      <div className={styles.pageContent}>
+        <ChocolateMachines lo={locale}/>
+      </div>
+    </section>
   )
 }
 
-export default ChocolateMachines
+export default ChocolateMachinesPage

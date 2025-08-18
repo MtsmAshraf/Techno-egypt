@@ -1,6 +1,5 @@
 .pageHeader{
     background-image: var(--main-gradient);
-    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
