@@ -4,7 +4,7 @@
 .home .logo{
   background-color: #000000ac;
   backdrop-filter: blur(20px);
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--sec-color);
   width: 150px;
   height: 150px;
   position: absolute;
