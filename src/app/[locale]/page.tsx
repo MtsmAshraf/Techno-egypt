@@ -32,7 +32,7 @@ import { FaLightbulb } from "react-icons/fa";
         <Link href="/engineering-solutions" className={styles.part}>
         <FaLightbulb />
           <span>
-            Engineering Solutions
+            Industrial Solutions
           </span>
         </Link>
       </div>
