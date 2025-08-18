@@ -1,3 +1,8 @@
 .subpagesLayout{
     margin-top: 80px;
 }
+@media (max-width: 767px) {
+    .subpagesLayout{
+        margin-top: 60px;
+    }
+}
