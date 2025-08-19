@@ -1,24 +1,45 @@
 .card{
     display: flex;
     align-items: center;
-}
-.card{
     width: calc((100% - 30px)/ 2);
+    text-decoration: none;
 }
+.card div:has(>svg),
 .card div:has(>img){
-    width: 100px;
+    width: 150px;
     aspect-ratio: 1/1;
     background-color: var(--sec-color);
     border: 1px solid var(--sec-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    z-index: 2;
+    box-shadow: var(--main-shadow);
+    transition: var(--main-transition);
 }
+.card div:has(>svg) svg,
 .card div:has(>img) img{
     object-fit: contain;
-    height: 100%;
+    width: 70%;
+    height: 70%;
+    transition: var(--main-transition);
 }
-.card > div:nth-child(2){
-}
-.card h2{
+
+.card:hover div:has(>svg),
+.card:hover div:has(>img){
     background-color: var(--main-color);
+}
+.card:hover div:has(>svg) svg,
+.card:hover div:has(>img) img{
+    width: 80%;
+    height: 80%;
+}
+
+.card h2{
+    background-image: var(--main-gradient);
     color: #fff;
     width: fit-content;
     padding: 2px 20px;
@@ -31,7 +52,6 @@
 .card p{
     background-color: var(--sec-color);
     background-color: var(--logo-color);
-    color: #fff;
     color: #000;
     text-transform: lowercase;
     font-size: 16px;
@@ -53,35 +73,27 @@
 .card:nth-child(5) > div:nth-child(2) h2{
     margin-left: auto;
     margin-right: 0;
+    padding-right: 40px;
+    transform: translateX(30px);
 }
 .card:nth-child(1) > div:nth-child(2) p,
 .card:nth-child(3) > div:nth-child(2) p,
 .card:nth-child(5) > div:nth-child(2) p{
     text-align: right;
+    padding: 2px 40px 2px 20px;
+    transform: translateX(30px);
 }
-@media (max-width: 992px) {
-    /* .card{
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .card:nth-child(2),
-    .card:nth-child(4),
-    .card:nth-child(6){
-        flex-direction: row-reverse;
-    }
-    
-    .card:nth-child(2) > div:nth-child(2) h2,
-    .card:nth-child(4) > div:nth-child(2) h2,
-    .card:nth-child(6) > div:nth-child(2) h2{
-        margin-left: auto;
-        margin-right: 0;
-    }
-    .card:nth-child(2) > div:nth-child(2) p,
-    .card:nth-child(4) > div:nth-child(2) p,
-    .card:nth-child(6) > div:nth-child(2) p{
-        text-align: right;
-    } */
+.card:nth-child(2) > div:nth-child(2) h2,
+.card:nth-child(4) > div:nth-child(2) h2,
+.card:nth-child(6) > div:nth-child(2) h2{
+    padding-left: 40px;
+    transform: translateX(-30px);
+}
+.card:nth-child(2) > div:nth-child(2) p,
+.card:nth-child(4) > div:nth-child(2) p,
+.card:nth-child(6) > div:nth-child(2) p{
+    padding: 2px 20px 2px 40px;
+    transform: translateX(-30px);
 }
 @media (max-width: 767px) {
     .card{
@@ -93,7 +105,10 @@
     .card:nth-child(6){
         flex-direction: column;
     }
+    
+    .card div:has(>svg),
     .card div:has(>img){
+        width: 100px;
     }
     .card > div:nth-child(2) h2{
         margin-left: auto !important;
@@ -105,13 +120,35 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .card:nth-child(1) > div:nth-child(2) h2,
+    .card:nth-child(3) > div:nth-child(2) h2,
+    .card:nth-child(5) > div:nth-child(2) h2{
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 20px;
+        transform: translateX(0px);
+    }
+    .card:nth-child(1) > div:nth-child(2) p,
+    .card:nth-child(3) > div:nth-child(2) p,
+    .card:nth-child(5) > div:nth-child(2) p{
+        text-align: right;
+        padding: 2px 20px;
+        transform: translateX(0px);
+    }
     .card > div:nth-child(2) p{
         text-align: center !important;
         font-size: 14px;
     }
+    .card:nth-child(2) > div:nth-child(2) h2,
+    .card:nth-child(4) > div:nth-child(2) h2,
+    .card:nth-child(6) > div:nth-child(2) h2{
+        padding-left: 20px;
+        transform: translateX(0px);
+    }
     .card:nth-child(2) > div:nth-child(2) p,
     .card:nth-child(4) > div:nth-child(2) p,
     .card:nth-child(6) > div:nth-child(2) p{
-        /* text-align: right; */
+        padding: 2px 20px;
+        transform: translateX(0px);
     }
 }

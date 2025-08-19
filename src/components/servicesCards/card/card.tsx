@@ -1,14 +1,17 @@
 import React from 'react'
 import styles from "./card.module.css"
+import { Link } from '@/i18n/routing'
 const Card = ({
-    children
+    children,
+    href
 }: {
-    children: React.ReactNode
+    children: React.ReactNode,
+    href: string
 }) => {
   return (
-    <div className={styles.card}>
+    <Link href={href} className={styles.card}>
         {children}
-    </div>
+    </Link>
   )
 }
 
