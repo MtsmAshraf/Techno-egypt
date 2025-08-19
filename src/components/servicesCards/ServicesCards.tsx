@@ -1,14 +1,6 @@
-"use client"
 import React from 'react'
 import styles from "./services-cards.module.css"
-import Image from 'next/image'
 import Card from './card/card'
-import design from "../../../public/imgs/icons8-design-100.png"
-import supply from "../../../public/imgs/icons8-supply-100.png"
-import international from "../../../public/imgs/icons8-international-50.png"
-import installation from "../../../public/imgs/icons8-installation-64.png"
-import testing from "../../../public/imgs/icons8-testing-48.png"
-import maintainance from "../../../public/imgs/icons8-installation-50.png"
 import MainHeading from '../MainHeading/MainHeading'
 import { FaTools } from 'react-icons/fa'
 
