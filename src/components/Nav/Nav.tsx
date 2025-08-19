@@ -34,7 +34,7 @@ const Nav = ({
                 </Link>
             </li>
             <li>
-                <Link className={pathname.includes('/engineering-solutions') ? styles.active : ""} href={'/engineering-solutions'}>
+                <Link className={pathname.includes('/industrial-solutions') ? styles.active : ""} href={'/industrial-solutions'}>
                     <FaLightbulb />
                     <span>
                         Industrial Solutions

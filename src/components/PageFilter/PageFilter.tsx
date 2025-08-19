@@ -1,17 +1,17 @@
 "use client"
 import React from 'react'
 import styles from "./page-filter.module.css"
-import { GiFactoryArm } from 'react-icons/gi'
 import { FaLightbulb } from 'react-icons/fa'
 import { Link } from '@/i18n/routing'
 import { usePathname } from 'next/navigation'
+import { MdPrecisionManufacturing } from 'react-icons/md'
 const PageFilter = () => {
     const pathname = usePathname()
   return (
     <div className={styles.pageFilter} style={{ display:  pathname.split("/").includes("industrial-solutions") ? "none" : "flex" }}>
         <Link className={pathname.split("/").includes("machines-services") === false ? styles.active : ""} href={"/chocolate-machines"}>
             <h4 className={styles.icon}>
-                <GiFactoryArm  />
+                <MdPrecisionManufacturing />
             </h4>
             <span>
                 {/* {t('Filter.Body')} */}
