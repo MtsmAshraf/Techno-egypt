@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from "./vertical-nav.module.css"
 // import SocialUl from '../SocialUl/SocialUl'
@@ -6,6 +7,9 @@ import styles from "./vertical-nav.module.css"
 // import { usePathname } from 'next/navigation'
 import Logo from '../Logo/logo'
 import { Link } from '@/i18n/routing'
+import { FaHome, FaLightbulb } from 'react-icons/fa'
+import { GiChocolateBar } from 'react-icons/gi'
+import { usePathname } from 'next/navigation'
 const VerticalNav = ({
     shown,
     // lo
@@ -13,7 +17,7 @@ const VerticalNav = ({
     shown: boolean,
     // lo: string
 }) => {
-    // const pathname = usePathname()
+    const pathname = usePathname()
     const closeVerticalNav = () => {
         const closeBtn: any = document.querySelector("#close-vertical-nav") 
         if(closeBtn){
@@ -22,26 +26,32 @@ const VerticalNav = ({
     }
     return (
     <div className={shown ? styles.verticalNav + " " + styles.shown : styles.verticalNav}>
-        {/* <h3>{t("VerticalNav.Language")}</h3>
-        <LangSwitch lo={lo}></LangSwitch> */}
-        {/* <h3>{t("VerticalNav.Sections")}</h3> */}
         <div className={styles.logo}>
             <Logo text={false}></Logo>
         </div>
         <ul className={styles.links}>
             <li onClick={() => {closeVerticalNav()}}>
-                <Link href={'/'}>
-                    Home
+                <Link className={pathname.split("/").includes("/") ? styles.active : ""} href={'/'}>
+                    <FaHome />
+                    <span>
+                        Home
+                    </span>
                 </Link>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <Link href={'/chocolate-machines'}>
-                    Chocolate Machines
+                <Link className={pathname.split("/").includes("chocolate-machines") ? styles.active : ""} href={'/chocolate-machines'}>
+                    <GiChocolateBar />
+                    <span>
+                        Chocolate Machines
+                    </span>
                 </Link>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <Link href={'/industrial-solutions'}>
-                    Industrial Solutions
+                <Link className={pathname.split("/").includes("industrial-solutions") ? styles.active : ""} href={'/industrial-solutions'}>
+                    <FaLightbulb />
+                    <span>
+                        Industrial Solutions
+                    </span>
                 </Link>
             </li>
         </ul>

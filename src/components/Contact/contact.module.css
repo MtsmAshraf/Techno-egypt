@@ -1,6 +1,6 @@
 .contact{
     padding-top: 50px;
-    /* background-color: #fff; */
+    background-color: #fff;
     padding-bottom: 50px;
 }
 .contact > div:not(:first-child){

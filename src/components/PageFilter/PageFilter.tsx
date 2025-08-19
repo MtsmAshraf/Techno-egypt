@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
 import styles from "./page-filter.module.css"
-import { FaLightbulb } from 'react-icons/fa'
 import { Link } from '@/i18n/routing'
 import { usePathname } from 'next/navigation'
 import { MdPrecisionManufacturing } from 'react-icons/md'
+import { PiSparkleFill } from 'react-icons/pi'
 const PageFilter = () => {
     const pathname = usePathname()
   return (
@@ -20,7 +20,7 @@ const PageFilter = () => {
         </Link>
         <Link className={pathname.split("/").includes("machines-services") ? styles.active : ""} href={"/chocolate-machines/machines-services"}>
             <h4 className={styles.icon}>
-                <FaLightbulb />
+                <PiSparkleFill />
             </h4>
             <span>
                 {/* {t('Filter.Head')} */}

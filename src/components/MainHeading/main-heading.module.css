@@ -14,7 +14,6 @@
     margin-right: auto;
     margin-left: auto;
     color: var(--main-color);
-    background-color: var(--main-color);
     background-image: var(--main-gradient);
     color: var(--logo-color);
     width: fit-content;
@@ -24,16 +23,22 @@
     padding-right: 30px;
     /* padding: 5px 30px; */
     transition: var(--animation-transition);
+    transition-duration: 0.3s;
     font-size: 36px;
+    transform: translateY(20px);
+    opacity: 0;
 }
 .mainHeading.scrolled h2{
-    /* box-shadow: var(--main-heading-shadow), var(--main-shadow); */
+    opacity: 1;
+    transform: translateY(0px);
 }
 .mainHeading p{
     transition: var(--animation-transition);
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(-60px);
+    transform: translateY(20px);
     background-color: var(--sec-color);
     color: var(--logo-color);
     padding: 5px 30px;

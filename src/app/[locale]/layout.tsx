@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import icon from "./favicon.ico"
 import FloatContact from "@/components/FloatContact/FloatContact";
+import Loader from "@/components/Loader/Loader";
 // import FloatContact from "@/components/FloatContact/FloatContact";
 
 export const metadata: Metadata = {
@@ -38,6 +39,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body >
         <NextIntlClientProvider messages={messages}>
+          <Loader></Loader>
           {/* <Header lo={locale}></Header> */}
           {children}
           {/* <FloatContact></FloatContact> */}

@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import Loader from "@/components/Loader/Loader";
 import { Link } from "@/i18n/routing";
 import { GiChocolateBar } from "react-icons/gi";
 import Image from "next/image";
@@ -18,7 +17,6 @@ import { FaLightbulb } from "react-icons/fa";
   
   return (
     <div className={styles.home}>
-      <Loader></Loader>
       <div className={styles.logo}>
         <Image src={fullLogo} alt='Techno Egypt Logo'></Image>
       </div>

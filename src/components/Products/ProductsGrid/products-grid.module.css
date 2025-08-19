@@ -53,7 +53,6 @@
     /* border-bottom: 4px solid var(--logo-color); */
     transition: var(--main-transition);
     transition-duration: 0.1s;
-
 }
 .productsGrid .filter label:hover span,
 .productsGrid .filter div:has(input:checked) label span{

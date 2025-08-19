@@ -62,9 +62,17 @@
     padding-bottom: 5px;
     font-size: 14px;
     transition: var(--main-transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.verticalNav .links svg{
+    font-size: 30px;
 }
 .verticalNav .links a.active{
-    background-color: var(--logo-color);
+    background-color: var(--main-color);
     color: #fff;
 }
 .verticalNav .links a:hover{

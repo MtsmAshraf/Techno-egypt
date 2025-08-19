@@ -23,9 +23,9 @@
     grid-template-columns: repeat(5, minmax(150px, 1fr));
     row-gap: 30px;
     column-gap: 20px;
-    border-bottom: 1px solid var(--sec-color);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    /* padding-bottom: 30px; */
+    /* margin-bottom: 30px; */
     padding: 40px;
 }
 .productCards > a{ /* product card */
