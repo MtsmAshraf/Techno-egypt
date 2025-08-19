@@ -62,13 +62,13 @@ const Contact = ({
               <h3>
                 Office
               </h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13777.828145695737!2d31.702156053454157!3d30.30951531129146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1755595502337!5m2!1sen!2seg" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13777.828145695737!2d31.702156053454157!3d30.30951531129146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1755595502337!5m2!1sen!2seg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className={styles.location}>
               <h3>
                 Factory
               </h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13777.828145695737!2d31.702156053454157!3d30.30951531129146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1755595502337!5m2!1sen!2seg" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13777.828145695737!2d31.702156053454157!3d30.30951531129146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1755595502337!5m2!1sen!2seg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div className={styles.info}>
