@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import React from 'react'
 import styles from "./subpages-layout.module.css"
 import PageFilter from '@/components/PageFilter/PageFilter';
+import Contact from '@/components/Contact/Contact';
 
 
 
@@ -26,6 +27,7 @@ export default async function SubPagesLayout({
         <main>
             {children}
         </main>
+        <Contact lo={locale} />
     </div>
   )
 }
