@@ -5,6 +5,7 @@ import styles from "./vertical-nav.module.css"
 // import { Link } from '@/i18n/routing'
 // import { usePathname } from 'next/navigation'
 import Logo from '../Logo/logo'
+import { Link } from '@/i18n/routing'
 const VerticalNav = ({
     shown,
     // lo
@@ -29,48 +30,18 @@ const VerticalNav = ({
         </div>
         <ul className={styles.links}>
             <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#about'}>
-                    About Us
+                <Link href={'/'}>
+                    Home
+                </Link>
+            </li>
+            <li onClick={() => {closeVerticalNav()}}>
+                <a href={'/chocolate-machines'}>
+                    Chocolate Machines
                 </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#partners'}>
-                    Partners
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#services'}>
-                    Services
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#fields'}>
-                    Our Fields
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#clients'}>
-                    Clients
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#products'}>
-                    Products
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#projects'}>
-                    Projects
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#where'}>
-                    Our Location
-                </a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#contact'}>
-                    Contact Us
+                <a href={'/industrial-solutions'}>
+                    Industrial Solutions
                 </a>
             </li>
         </ul>

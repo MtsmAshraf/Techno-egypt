@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 const PageFilter = () => {
     const pathname = usePathname()
   return (
-    <div className={styles.pageFilter}>
+    <div className={styles.pageFilter} style={{ display:  pathname.split("/").includes("industrial-solutions") ? "none" : "flex" }}>
         <Link className={pathname.split("/").includes("machines-services") === false ? styles.active : ""} href={"/chocolate-machines"}>
             <h4 className={styles.icon}>
                 <GiFactoryArm  />

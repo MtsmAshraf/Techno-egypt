@@ -235,6 +235,9 @@
     .contact .info > div{
         width: 100%;
     }
+    .contact .info > div:last-child > div{
+        flex-direction: column;
+    }
     .contact .locations{
         flex-direction: column;
         padding-left: 20px;
