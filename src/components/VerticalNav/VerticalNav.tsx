@@ -35,14 +35,14 @@ const VerticalNav = ({
                 </Link>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <a href={'/chocolate-machines'}>
+                <Link href={'/chocolate-machines'}>
                     Chocolate Machines
-                </a>
+                </Link>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <a href={'/industrial-solutions'}>
+                <Link href={'/industrial-solutions'}>
                     Industrial Solutions
-                </a>
+                </Link>
             </li>
         </ul>
     </div>
