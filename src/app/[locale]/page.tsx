@@ -29,7 +29,7 @@ import { FaLightbulb } from "react-icons/fa";
             Chocolate Machinces
           </span>
         </Link>
-        <Link href="/engineering-solutions" className={styles.part}>
+        <Link href="/industrial-solutions" className={styles.part}>
         <FaLightbulb />
           <span>
             Industrial Solutions
