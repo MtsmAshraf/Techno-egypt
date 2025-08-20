@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram , faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import MainHeading from '../MainHeading/MainHeading'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/all";
 // import SocialUl from '../SocialUl/SocialUl'
 const Contact = ({
   lo
@@ -38,7 +41,28 @@ const Contact = ({
       }
       window.addEventListener("scroll", scrollcontactiSection)
   })
+  const scrollRef = useRef(null)
+  gsap.registerPlugin(ScrollTrigger)
+  
+  useGSAP(() => {
 
+      gsap.from(".location", {
+        y: 20,
+        opacity: 0,
+        duration: 1.4,
+        borderRadius: "50%",
+        scrollTrigger: {
+          trigger: ".location", // box is the element that its animation will be triggered when it enters the view port of the screen
+          start: "top bottom", // this means the animation will be triggered when the bottom of the box hits the bottom of the screen
+        },
+        stagger: {
+          amount: 0.1,
+        },
+        ease: "back.inOut"
+      })
+
+  }, {scope: scrollRef}) // {scope: scrollRef}: here is optional, this makes gsap know where exactly the animation should happen
+  
   
   const classNames = [
       lo === "ar" ? styles.ar : null,
@@ -57,14 +81,14 @@ const Contact = ({
           </p>
         </MainHeading>
         <div className="container">
-          <div className={styles.locations}>
-            <div className={styles.location}>
+          <div className={styles.locations} ref={scrollRef}>
+            <div className={styles.location + ` location`}>
               <h3>
                 Office
               </h3>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13777.828145695737!2d31.702156053454157!3d30.30951531129146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1755595502337!5m2!1sen!2seg" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div className={styles.location}>
+            <div className={styles.location + ` location`}>
               <h3>
                 Factory
               </h3>
