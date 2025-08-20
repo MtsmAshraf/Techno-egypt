@@ -40,12 +40,12 @@
     height: 400px;
 }
 .contact .info{
-    opacity: 0;
-    transform: translateX(-20%);
+    /* opacity: 0; */
+    /* transform: translateX(-20%); */
+    /* filter: blur(20px); */
     transition: var(--animation-transition);
     transition-duration: 0.8s;
     /* transition-delay: 0.4s; */
-    filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: center;
