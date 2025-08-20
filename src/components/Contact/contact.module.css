@@ -62,14 +62,6 @@
     transform: translateX(0%);
     filter: blur(0px);
 }
-@media (max-width: 1200px) {
-    .contact .info{
-        transform: translateY(50%);
-    }
-    .contact.scrolled .info{
-        transform: translateY(0%);
-    }
-}
 .contact .info > div{
     width: calc(100% / 2);
 }
